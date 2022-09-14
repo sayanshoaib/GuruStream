@@ -13,9 +13,9 @@ list.forEach((item) => item.addEventListener("mouseover", activeLink));
 // Menu Toggle
 let toggle = document.querySelector(".toggle");
 let navigation = document.querySelector(".navigation");
-let main = document.querySelector(".main");
+let main2 = document.querySelector(".main2");
 
 toggle.onclick = function () {
   navigation.classList.toggle("active");
-  main.classList.toggle("active");
+  main2.classList.toggle("active");
 };
