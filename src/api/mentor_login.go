@@ -41,5 +41,7 @@ func MentorLoginProcess(c echo.Context) error {
 	cookie.Expires = time.Now().Add(24 * time.Hour)
 	c.SetCookie(cookie)
 
+	fmt.Println(cookie.Name)
+
 	return c.Redirect(http.StatusTemporaryRedirect, "/mentor/dashboard")
 }
